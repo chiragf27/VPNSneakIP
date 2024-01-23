@@ -1,0 +1,27 @@
+//body styls
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $rubikFont;
+    font-weight: $light;
+    transition: all ease-in-out 250ms;
+}
+
+// global classes
+.muted-heading {
+    @include font-size(40px);
+    text-transform: capitalize;
+
+    @include mediaMax(769px) {
+        margin-bottom: 1em;
+    }
+}
+
+.border-right {
+
+    @include mediaMax(992px) {
+        border-right: none !important;
+    }
+}
